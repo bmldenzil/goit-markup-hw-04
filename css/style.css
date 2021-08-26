@@ -517,3 +517,7 @@ margin-right: 27px;
     color: var(--primary-text-color)
 }
 
+/* icon */
+.icon{
+    fill: currentColor;
+}
