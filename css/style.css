@@ -520,10 +520,13 @@ margin-right: 27px;
 
 /* icon */
 .icon-smartphone{
+
     width: 10px;
     height: 16px;
     margin-right: 10px;
     fill: var(--primary-text-color);
+    background-size: contain;
+    outline: 1px solid black;
 }
 .icon-envelope{
     width: 16px;
