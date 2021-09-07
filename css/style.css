@@ -112,6 +112,19 @@ ul, a{
     color: var(--primary-text-color);
 
 }
+.icon-smartphone{
+
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: var(--primary-text-color);
+}
+.icon-envelope{
+    width: 16px;
+    height: 10px;
+    margin-right: 10px;
+    fill: var(--primary-text-color);
+}
 .contact-header{
     display: flex;
     align-items: center;
@@ -136,6 +149,10 @@ ul, a{
 .contact-link:hover,
 .contact-link:focus{
     color: var(--accent-color);
+}
+.contact-link:hover svg,
+.contact-link:focus svg{
+    fill: var(--accent-color);
 }
 /* main */
 .main-top .conteiner{
@@ -385,40 +402,99 @@ ul, a{
     margin-top: 16px;
     padding: 0;
     list-style: none;
-    outline: 1x solid black;
 
-}.social li:not(:last-child){
+}
+.social li{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.social li:not(:last-child){
     margin-right: 10px;
 }
 .social li:nth-child(1){
     margin-left: 32px;
 }
 .social a{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
     padding: 0;
-    border: none;
     border-radius: 50%;
     background-color: #f5f4f4;
-    outline: 1px solid black;
-    background-position: center;
-    cursor: pointer;
 }
 .icon-social{
     content: "";
 
-    background-size: contain;
-    fill: var(--primary-text-color);
+    fill: #afb1b8;
 }
-.social a:hover:focus{
+.social a:hover,
+.social a:focus
+{
     background-color: var(--accent-color);
+
 }
-.icon-social:hover:focus{
-    fill: #fff;
+.social a:hover svg,
+.social a:focus svg{
+    fill: #FFFFFF;
+}
+/* Clients */
+.client-section{
+    color: var(--title-text-color);
+    background-color: var(--primary-bg-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.client-titul{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.client-section ul{
+    display: flex;
+    padding: 0;
+}
+.client-section li{
+    width: 170px;
+    height: 92px;
+    border: none;
+}
+.client-section li:not(:last-child) {
+    margin-right: 30px;
+}
+.client-logo{
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+    padding: 0;
+}
+.client-section .conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.client-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+}
+
+.client-link:hover svg,
+.client-link:focus svg{
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
 }
 /* footer */
 .footer{
+    display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color:  var(--secondary-bg-color);
@@ -435,13 +511,16 @@ ul, a{
     text-decoration: none;
 }
 .logo-footer{
-    color: var(--accent-color);;
+    color: var(--accent-color);
 
 }
+
+
 .footer .conteiner{
     display: flex;
-    flex-direction: column;
+
 }
+
 
 .footer address{
 
@@ -465,17 +544,56 @@ ul, a{
 
 }
 .footer-link{
-
-
-
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-
 }
+.footer-set{
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-soctitul{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+.footer-social{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+.footer-social li:not(:last-child){
+    margin-right: 10px;
+}
+.footer-social a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: #fff;
+}
+.footer-social a:hover,
+.footer-social a:focus{
+    background-color: var(--accent-color);
+}
+
+
+
 
 /* портфолио */
 .port-body{
@@ -590,16 +708,4 @@ margin-right: 27px;
 }
 
 /* icon */
-.icon-smartphone{
 
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    fill: var(--primary-text-color);
-}
-.icon-envelope{
-    width: 16px;
-    height: 10px;
-    margin-right: 10px;
-    fill: var(--primary-text-color);
-}
