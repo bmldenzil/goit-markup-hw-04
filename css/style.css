@@ -311,6 +311,7 @@ img{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    margin-top: 0;
 
 
 }
